@@ -1,0 +1,238 @@
+[Insert C++ Character sets here]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C++ Tokens
+____________
+[Insert meaning of Tokens and a little explanation about why tokens are tokens]
+
+Identifiers - It means something which identifies something. From our mathematics class it is quite clear that 'variables' are the ones who identifies a value.
+So basically a variable. [Insert a little more detail here]
+
+Keywords - These are reserved words ( [Insert why they are called this] ) which you cannot use as an identifier. In English we say 'Hi Zed', here Zed (a noun, a name) is an identifier. Now look at this, suppose a man has a name 'is'. Now to greet him one would say, 'Good Morining is'. Which is grammetically incorrect. That is, 'is' is a keyword which cannot be used as an identifier ( a noun) as the language uses it for something else.
+
+Constants - A constant occupies memory but it's value cannot be changed.
+
+Operators - They operate. What can you do when you are given numbers 2 and 3 ? You need an operator to operate the two numbers. Operators take in value and give an operates on them and return an output. 
+Types: 
+Unary (Un - one) - Requires only one input. Eg: '-','+' (The '-' in -2).
+Binary (Bi- two) - Requires 2 inputs. Eg: '+','-','/' ('+' in 2+3). 
+Ternary (Ter - three) - Requires 3 inputs. Eg: ?: (To be dealt in conditional statements)
+
+
+
+Structure Of A C++ Program
+___________________________
+
+What is your first move when you are asked to draw a painting ? 
+Getting the toolbox the papers and then start drawing. 
+To draw something you need not to manufacture the toolbox (The crayons) and the papers yourself. Instead, someone else has done that for you and you just need to buy (or borrow) them. 
+In C++ buying (or borrowing) is called 'including'. We include some code in our program so that we are able to code what we want to code.
+
+A normal C++ program begins with include statements and then the real program itself.
+
+Include files - For us to program, someone has gone through a lot of trouble and made things easier for us by providing us with some files which we may just 'include' and proceed with our program.
+The syntax (Syntax is [Insert definition of syntax here] ) of including a file is :
+#include<file>
+The pound (or the hash) symbol means that the current line is a special line ( a preprocessor ) and does requires to be executed BEFORE anything of our real program gets a chance to compile. 
+'include instructs to include a file within < and > '
+Eg:
+#include<iostream.h>
+#include<somethingSomething.h>
+#include<abcd.c>
+
+Note 1: the #include<MyFile> searchs for the file named MyFile in a folder that is not known to you (the compiler deals with it). If you want to include some other file than your compiler provides you then you need to write #include "C:\Folder\MyFile" . The double quotes (") instructs the compiler to look in the given path rather than the path specified by the compiler.
+
+Note 2: The header files (the files we normally include) ends with an extension '.h' [In Turbo C++]
+
+
+After including the header files the program begins it's execution from a specific part called the main function (Functions are to be dealt later in detail.).
+
+So a typical C++ program looks like
+
+#include<header.h>
+
+int main(){
+
+return 0;
+}
+
+
+
+
+
+
+
+Hello World
+_____________
+
+In the programming world, we begin, as a tradition, by writing a program which prints the text "Hello World" to the monitor.
+In C++ we do it like this:
+
+#include<iostream.h>
+int main(){
+	cout<<"Hello world";
+	return 0;
+}
+
+The zeroth line includes the file 'iostream.h' which provides us IO (Input/Output) functions and capabilities.
+The first line begins our main function.
+The second one prints the string "Hello world"
+The third gives a status of 0 to the operating system informing that the program ran well.
+The fourth ends our main function.
+
+[In programming we begin counting with zero, the reason is to follow in later chapters]
+
+'cout' is an object (to be dealt later) which we got from iostream.h and it prints anything after <<.
+You can think of cout as your monitor. The << symbol shows that the string "Hello world" is will be put on the monitor.
+i.e.
+----------------
+|Monitor(cout) |      <<-------------   "Hello World"
+________________ 
+
+Strings are always identified by double quotes around them. So "Alphabet" is a string. "Alpha" is a string, so is "Alpha Beta" and so is "A". 
+If it is in double quotes then it is a string for sure.
+
+The second and third lines are statements. They instruct to do a specified task to the operating system. Here, to print the string and return a success status (0). 
+In English a statement must end with a full stop (.) and in C++ the statement must end with a semicolon (;). Every line which is a statement must be having a semicolon at the end or it is considered as an error;
+
+
+
+
+
+
+
+Header files
+_____________
+
+As dealt earlier, header files contained codes written by someone else which you can use. The header files we would be using in our course are:
+
+iostream.h - Input ouput stream.
+
+iomanip.h - Input output manipulators.
+
+stdio.h - Standard input output.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error Messages
+_______________
+
+A program having an error message and not working is far more better than a program not having a error message and not working as expected as well.
+Error messages are for our good. They help us to determine which part of our program is causing the problem in compilation. Dealing with error messages is a very vital part of programming.
+
+These are some important and day to day found error messages:
+
+"Syntax error" : Syntax, in short, means grammer. This error indicates that somewhere you have violated grammer of the language. Usually new programmers forget to end a statement with a semicolon (;). You might want to check the line ABOVE the line specified in the error for a semicolon. If that is not the case then you should look at the line specified and look for grammetical (syntatical) errors.
+
+"Linker error" : In turbo C++ a possible fix for this error is to go to the "Projects" -> "Close Project". If the project is already closed then you might need to restart or even reinstall Turbo C++.
+
+"lvalue required" : lvalues are 'left values'. The values which appear in left of an '=' sign. Typically a variable. Check if you're having a statement like 2+5 = 3
+"rvalue requred" : rvalues are 'right values'. The values which appear in right of an '='sign. Typically an expression or constant. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Operations From C language
+___________________________
+
+Although C++ is a different language than the C language it inherits much of its qualities and features.
+One such feature is, of course, Input Output (IO). The standard header file which can be found in your compiler is:
+stdio.h - Short for standard io (input output).
+It provides you functions using which you can perform your input output operations.
+
+the two functions which concern us are:
+gets - short for get string.
+puts - short for put string.
+
+the syntax being:
+gets(variableName); 
+puts(value);
+
+respectively.
+
+'gets' simply asks the user for input of a **string** and stores it in the variable named variableName.[1]
+'puts' puts (or prints) the value provided to it. The value __may be__ a string. Eg: puts("Hello world");
+
+Note: You need to 'include stdio.h' in order to use gets and puts functions. i.e. you need a line #include <stdio.h>
+
+[1] Variables will be dealt later. For now, variables are named places in the computer memory where you can store your data.

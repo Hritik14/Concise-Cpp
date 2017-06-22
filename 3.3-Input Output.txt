@@ -1,0 +1,112 @@
+By now we know enough to print outputs and receive inputs to and from the user.
+
+						Output
+					________________________
+The header files which allows us to output are : stdio.h and iostream.h
+
+puts (from stdio.h)
+____________________
+
+We can output a string using the puts function.
+Syntax:
+	puts("String");
+Eg:
+	puts("Hello world");
+	puts("Learing C++");
+
+We would rarely be using this function.
+
+cout (from iostream.h)
+_______________________
+
+This is NOT a function. Rather an object.
+Both are to be dealt at later stages. For now, we will stick to the syntaxes shown.
+Syntax:
+	cout<<value1<<value2<<value3<<value4;
+
+We can have as many values as we want seperated by << operators.
+Eg:
+	cout<<"Hi ram"<<" how are you ? "<<" I am fine. "<<"Have you learnt that I can insert tab like \t this?";
+	cout<<"Hi ram how are you ?. I am fine. Have you learnt that I can insert tab like \t this?";
+
+Both the statements print exactly the same message.
+Note that \t is ONE character and as a string is nothing but a sequence of characters, it can be used inside a string to have the same effect when it is used as a character.
+
+To learn more about output a program would suffice:
+	#include<iostream.h>
+	int main(){
+		int i;
+		char MyInitial='H';
+		const float PI = 3.14;
+		int salary = 0;
+		cout<<"Hi friend.\nMy Initial is: "<<MyInitial<<"\nThe value of pi remembered by me to the hightest precision is "<<PI<<endl<<"and currently my salary is "<<salary<<endl;
+	return 0;
+	}
+
+
+This will output:
+[Insert exact output here]
+
+The << operator works as a concatanator. It merges 2 different data types for output.
+You can remember it as
+
+|Monitor (cout) |  << "Your text"
+
+
+Notice the endl:
+endl is defined in iostream.h and it acts like '\n' character. It is a better, C++ style of saying end line and print an enter. From now on we will be using endl instead of '\n' character.
+
+
+
+
+
+
+
+
+Input
+______
+
+A real world application cannot run without a user input.
+In the topics concerned we are provided with two ways of taking input from the user.
+gets function and the cin object.
+
+gets function (from stdio.h)
+_____________________________
+It is used to input a string from the user.
+Syntax is:
+	gets(StringVariableName);
+We will learn about string variables later in the chapter Arrays.
+Remember gets will take input the complete string provided by the user until he presses enter.
+
+
+cin object (from iostream.h)
+_____________________________
+It is used to input any data type.
+Syntax is:
+	cin>>variable1>>variable2>>variable3>>variable4>>variable5;
+
+We can have as many variables we want to take input to.
+Remember: When taking input of strings cin only considers a word. That is, when user hits a space or enter, the next value entered is stored in the next variable, if provided.
+
+Example program:
+
+	#include<iostream.h>
+	int main(){
+		int salary;
+		char initial;
+		const int pi = 3.14;
+		cout<<"Hi Bell, Please write your inital space your salary"<<endl;
+		cin>>initial>>salary;
+		cout<<"Thanks Bell, your inital is : "<<initial<<" and your salary is "<<salary<<" and wait, the value of pi is "<<pi<<endl;
+		return 0;
+	}
+
+Example run:
+[Insert a run here]
+
+Notice that the concatanation for cin is different from cout. cin uses >> to take more values.
+You can remember it as:
+
+-----------------------
+|cin (input, keyboard) |        >>             Screen
+_______________________

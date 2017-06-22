@@ -1,0 +1,10 @@
+	#include<iostream.h>
+	int main(){
+		int i;
+		char MyInitial='H';
+		const float PI = 3.14;
+		int salary = 0;
+		cout<<"Hi friend.\nMy Initial is: "<<MyInitial<<"\nThe value of pi remembered by me to the hightest precision is "<<PI<<"\nand currently my salary is "<<salary;
+	return 0;
+	}
+

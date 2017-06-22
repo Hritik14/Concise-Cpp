@@ -1,0 +1,38 @@
+					Constants
+					__________
+
+A constant is a value which never changes.
+2 is always equal to 2, it never changes, it is a constant. Same is the case with 'a' or 4.12 or 3.14
+
+Constants can be integers, characters or floating point numbers (decimal numbers). 
+
+It is interesting to think why the language requires to put ' (singal quote) before and after a character constant.
+Because the representation of a character may be of more than one character.
+Can you find a way to store the value <Enter> in the program? What about inserting a tab character ?
+Different Operating systems handle both the character in different ways so you just cannot press it from your keyboard to store them.
+Instead there are characters defined to store them.
+They are '\n' for newline or <Enter>
+and 
+'\t' for tab character.
+
+Note that there is a backslash (the one near your enter button) not a forward slash.
+
+All these are singal characters:
+'\a' , '\b' ,'\n' , '\t' and many more.
+Try exprimenting with them by printing them.
+
+
+
+
+
+Sometimes we need to turn a variable into a constant. There is a way for that.
+Suppose we want to have a constant named PI which will hold the value 3.14
+for that we have an access modifier named const.
+Prefixing the word const before the declaration of a variable makes it constant.
+
+So,
+	const int P = 3;
+	const float PI = 3.14;
+	const char TRADEMARK = 'H';
+
+are constants and you cannot change their values. Just like you cannot change the value of 2 or 3 you cannot change the values of constants declared. 

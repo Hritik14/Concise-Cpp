@@ -1,0 +1,16 @@
+					INTRODUCTION TO PROGRAMMING IN C++ [PART 1]
+
+A little bit about C++ and this book.
+_____________________________________
+
+First of all, C++ is NOT advanced C. The two are different programming languages. C++ was originally developed by Bjarne Stroustroupe at bell labs ... [insert more info here from Bjarne website]
+In this book, as advised by CBSE, we will be following the C++ that was popular in 1990s. The student is advised not to panic. Although the language has changed a lot but
+essentials have remained the same. The book takes you to the journey of programming, bit by bit, revealing all the interesting aspects.
+The book has been strictly based on CBSE syllabus found at http://cbse.nic.in but if the reader wishes to dwell more and learn the advanced concepts which are beyond the scope of this book then he/she is advised to take a look at 'The C++ Programming Language' By Bjarne Stroustroupe, [Insert more good books' name here]
+The book aims to guide the reader to both enjoy the language and get the marks he/she deserves in the examination.
+
+C++ is a case-sensitive language i.e. it is sensitive to the case of the letters (case as in upper-case (Capital letters) and lower-case(Small letters)).
+So, Manu,manu,MaNu,MaNU are 4 different persons in C++.
+
+C++ does not care about the space between any two keywords [Keywords are words which are the real instructions TODO: Put more about keywords and differentiate between string and keyword here]. That is, you write one word and then hit enter 10 times or 1 time or hit a space then write another word, the language does not care. 
+

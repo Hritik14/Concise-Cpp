@@ -1,0 +1,139 @@
+							Data Types and Variables
+						_____________________________________
+
+So far we have been just printing some text to the screen and not storing any data. In real world programs we indeed need to store a lot of data and process them.
+The data types those are predefined[0] (or primitive data types) in C++ are:
+char - Used to store characters.
+int - Used to store integers.
+float - Used to store floating point values i.e. decimal values.
+double - Used to store large floating point values.
+
+[Insert ranges above]
+
+Integers
+___________
+1,2,3,4 ....
+are integers.
+
+Characters
+_____________
+'a', 'B', 'A' , 'd', '1', '3', '0'
+are characters. Note the single quotes around them. They explicitly tell the compiler that only ONE character is inside. 
+Take in mind that 'a' and "a" are completely different. 'a' is a character whereas "a" is a string (to be dealt later).
+
+Floating point numbers
+_______________________
+2.5, 1.42, 1.534, 2.11 , 3.13
+
+Strings
+________
+In the C++ version we are learing now, there is no data type named string. A string is just treated as a sequence of characters.
+Strings are always written inside the double quotes.
+"I am an animal"
+"I am a social animal"
+are strings. 
+
+The data types are used to store data in a variable.
+To use a variable there are certain rules.
+You must DECLARE a variable. You must say loudly 'Ram' IS A DOCTOR in order for others to know it.
+There is a scope (lifetime) of a variable. A variable comes into existance when the scope starts and dies when it ends.
+You cannot have 2 different variables with same name.
+A variable can ONLY be **started** with a alphabet or an underscore NOTHING else.
+
+There are 2 types of variables.
+Stack or automatic variables : They come into existence when the scope (lifetime) starts and die when it ends. They are stored in STACK.
+Heap or dynamic variables: They come into existence when the programmer assigns space for them and die when the programmer deletes them otherwise they live forever (Until the program runs). They are stored in HEAP.
+
+Details about STACK and HEAP memory are beyond the scope of this book.
+
+Currently we will be dealing with Stack variables.
+The declaration for them is:
+	datatype variableName;
+or
+	datatype variableName=value;
+
+The first one is just declaration. Our new born variable has to store something. For now it stores what is called a garbage value. The value is unpredictable and the compiler decides what to put there.
+The second one is called declaration with initialisation i.e. we initialise the variable after the declaration. The variable does not store a garbage value but the value specified by the programmer.
+
+Eg:
+	int i;
+	int i=2;
+	int _myVar=4;
+	int my_var=45;
+	char VaRiable='a';
+	float variable=1.23;
+	float VariabLe;
+
+The above mentioned ALL the variables are distinct and different.
+
+
+
+
+
+
+
+
+Assignment of a variable
+_________________________
+
+Assignment refers to assigning a value to a variable.
+Althouth during declaration we can initialise the variable with a value but if required the value of a variable can be easily changed. Variables are meant to vary.
+
+The syntax of assignment of a variable is:
+	variableName = value
+
+'=' is called assignment operator.
+
+Eg:
+	i=4;
+	_myVar=10;
+	VaRiable='b';
+
+Of course, i, _myVar and VaRiable must be DECLARED before using (even assigning) them.
+
+
+
+
+
+
+Type Modifiers
+_______________
+
+The variables can be prefixed with type modifiers to modify the way they behave.
+The concerned type modifiers are: signed,unsigned and long.
+
+Signed
+_______
+
+It states that the variable is signed. So the variable may have a positive or negative value. It states that the sign is present.
+By default (i.e. without any modifier) all the variables are signed.
+Eg:
+	signed int i = 2;
+	signed int k = -4;
+
+Unsigned
+_________
+
+It states that the variable won't have any sign and they all will always be positive. Trying to assign a negative value to an unsigned variable results in unexpected results.
+Eg:
+unsigned int i = 3;
+unsigned float f = 3.11;
+
+Long
+_____
+
+This one can only be used with int. It just increases the range of int type. 
+As it supports only int so when using long, the keyword int can be omitted.
+Eg:
+	long i = 4;
+	long int k = 400000;
+	long s = 100000021;
+	long z = -121212;
+
+
+
+
+
+
+
+[Insert a table of ranges of data types and the space occupied by them]

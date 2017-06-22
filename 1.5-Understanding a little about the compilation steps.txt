@@ -1,0 +1,10 @@
+				Compilation steps
+			-------------------------------------------------------
+
+After writing a C++ program it needs to be compiled. The steps those are follwed are :
+
+1. Linking
+2. Preprocessing.
+3. Compiling.
+
+[Insert the correct details here]
